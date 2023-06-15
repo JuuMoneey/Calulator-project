@@ -27,12 +27,12 @@ numBtns.forEach(function(btn) {
         // i added an event listner so that when a number button is clicked it causes an event 
         console.log(e.target.value)
         if(num && operator){
-        //that targets the value of the element 
             num2 += e.target.value
-        //which then inserts that value in my display container  
+            //that targets the value of the element 
             display.innerText = num2
-        //returning only num2     
-        return num2
+            //which then inserts that value in my display container  
+            return num2
+            //returning only num2     
     }else{ 
         num += e.target.value
         display.innerText = num
@@ -44,8 +44,7 @@ numBtns.forEach(function(btn) {
 
 operators.forEach(function(ops) {
     //going through the array for each operator
-    ops.addEventListener('click', (e) => {
-    //    
+    ops.addEventListener('click', (e) => {    
        if(num){
            operator += e.target.value
            return operator
